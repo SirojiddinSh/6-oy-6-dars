@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    font-size: 100px;
+    width: 100%;
+    height: 795px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 27em;
+    perspective-origin: 77px 100px;
+    position: relative;
+}
+
+.cube {
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: kub 15s infinite linear;
+}
+
+@keyframes kub {
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.shadow {
+    position: absolute;
+    margin-left: 480px;
+    background-color: aqua;
+    width: 2em;
+    height: 2em;
+    transform: translateZ(-130px) translateX(40px) rotateX(90deg) rotateZ(10deg)
+        scale(1.5);
+    bottom: 0.2em;
+    left: 3.8em;
+    box-shadow: 0 100px 100px 10px blue, 50px 120px 200px 10px blue;
+    filter: blur(100px);
+}
+
+.top,
+.bottom,
+.left,
+.right,
+.front,
+.back {
+    font-size: 100px;
+    height: 2em;
+    width: 2em;
+    background-color: aqua;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    box-shadow: 0 0 50px 10px blue inset, 0 0 0 2em aqua inset;
+}
+
+.top {
+    transform: translateY(-1em) rotateX(90deg);
+}
+
+.bottom {
+    transform: translateY(1em) rotateX(90deg);
+}
+
+.left {
+    transform: translateX(-1em) rotateY(90deg);
+}
+
+.right {
+    transform: translateX(1em) rotateY(90deg);
+}
+
+.front {
+    transform: translateZ(1em);
+}
+
+.back {
+    transform: translateZ(-1em);
+}

@@ -1,0 +1,24 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    height: 50px;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(71, 70, 70);
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    color: aliceblue;
+}
+
+footer p {
+    color: rgb(173, 170, 170);
+    font-size: 12px;
+}
