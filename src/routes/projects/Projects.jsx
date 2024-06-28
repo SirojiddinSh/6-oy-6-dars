@@ -12,10 +12,10 @@ import project8 from "../../images/MyProject/Screenshot_8.png";
 const Projects = () => {
     return (
         <div>
-            <div class="welcome">
-                <div class="welcome__container">
-                    <h1 class="welcome__h1">My Projects</h1>
-                    <div class="box"></div>
+            <div className="welcome">
+                <div className="welcome__container">
+                    <h1 className="welcome__h1">My Projects</h1>
+                    <div className="box"></div>
                 </div>
             </div>
             <div className="project__cards">
@@ -172,18 +172,6 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-
-            <script
-                type="module"
-                src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-            ></script>
-            <script
-                nomodule
-                src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-            ></script>
-            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-            <script src="script.js"></script>
         </div>
     );
 };
